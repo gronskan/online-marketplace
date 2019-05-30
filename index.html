@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill out the form to place your order!</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn-danger">Place Order</button>
+
+        </form>
+      </div>
+      <div id="receipt">
+        <h1>Your Purchase Order</h1>
+        <p>Thanks <span class="name"></span> for your purchase!</p>
+        <p>Shipping Info:</p>
+          <p>Your order has been sent to <span class="address"></span>
+      </div>
+    </div>
+  </body>
+</html>
